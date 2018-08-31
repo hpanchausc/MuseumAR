@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JXT-Ih-pHb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Amazing View Controller-->
+        <scene sceneID="22i-Bc-BbF">
+            <objects>
+                <viewController id="JXT-Ih-pHb" customClass="MyAmazingViewController" customModule="ARMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ev9-3T-ub8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-qa-5au">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hero-background" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-QR-gSd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Museum AR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOf-jE-2E0">
+                                        <rect key="frame" x="30" y="86" width="202" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRO-sk-VRk">
+                                        <rect key="frame" x="0.0" y="322" width="375" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Yum-cc-Q9x">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-A9-Eqx">
+                                                    <rect key="frame" x="20" y="24" width="113" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                    <state key="normal" title="Scan art">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="onGoButton:" destination="JXT-Ih-pHb" eventType="touchUpInside" id="Rqh-Uz-Hwu"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-kV-cRf">
+                                                    <rect key="frame" x="20" y="80" width="120" height="3"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.68627450980392157" green="0.27843137254901962" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezJ-G9-I5d">
+                                                    <rect key="frame" x="229" y="80" width="120" height="3"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.68627450980000004" green="0.2784313725" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ML-GC-P0V">
+                                                    <rect key="frame" x="230" y="24" width="119" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                    <state key="normal" title="Archives">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbJ-er-P2N">
+                                <rect key="frame" x="0.0" y="452" width="375" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbm-K8-3DY">
+                                        <rect key="frame" x="29" y="33" width="317" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zvd-sw-2r5"/>
+                    </view>
+                    <connections>
+                        <outlet property="onGoButton" destination="ha4-A9-Eqx" id="rfM-gh-HwD"/>
+                        <segue destination="BV1-FR-VrT" kind="presentation" identifier="mySegue" id="g2l-Hh-YcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g95-qt-5Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="31.934032983508249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                    <arskView key="view" contentMode="scaleToFill" id="EO5-fy-WZq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arskView>
+                    <connections>
+                        <outlet property="sceneView" destination="EO5-fy-WZq" id="YuC-8q-ovz"/>
+                        <segue destination="b2p-DH-IpT" kind="presentation" identifier="showImageInformation" id="6KK-EV-9eB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="32"/>
+        </scene>
+        <!--Image Information View Controller-->
+        <scene sceneID="Ey0-D5-MUD">
+            <objects>
+                <viewController id="b2p-DH-IpT" customClass="ImageInformationViewController" customModule="ARMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ajf-OS-FVT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hC9-sl-Qsj">
+                                <rect key="frame" x="67" y="139" width="240" height="306"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="qx4-WB-loD"/>
+                                    <constraint firstAttribute="width" secondItem="hC9-sl-Qsj" secondAttribute="height" multiplier="40:51" id="wmj-8e-F6A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Image Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-KC-Rbv">
+                                <rect key="frame" x="67" y="71" width="240" height="43"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-pQ-e1U">
+                                <rect key="frame" x="16" y="453" width="343" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="IZZ-NW-jnE"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-nz-lpv">
+                                <rect key="frame" x="20" y="20" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="dismissView:" destination="b2p-DH-IpT" eventType="touchUpInside" id="aY9-HU-tKG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYZ-Du-bMV">
+                                <rect key="frame" x="18" y="598" width="339" height="5"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.2784313725" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xYZ-Du-bMV" firstAttribute="top" secondItem="nQB-pQ-e1U" secondAttribute="bottom" constant="16" id="6ck-ga-I4h"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="top" secondItem="eUX-KC-Rbv" secondAttribute="bottom" constant="25" id="79b-BT-YYV"/>
+                            <constraint firstItem="nQB-pQ-e1U" firstAttribute="centerX" secondItem="xYZ-Du-bMV" secondAttribute="centerX" id="7io-ae-gG7"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="centerX" secondItem="xYZ-Du-bMV" secondAttribute="centerX" id="AT2-rt-vwA"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="centerX" secondItem="Ajf-OS-FVT" secondAttribute="centerX" id="C3b-Fy-YfW"/>
+                            <constraint firstItem="zJx-UH-8d2" firstAttribute="bottom" secondItem="xYZ-Du-bMV" secondAttribute="bottom" constant="64" id="HBX-G8-jGU"/>
+                            <constraint firstItem="nQB-pQ-e1U" firstAttribute="top" secondItem="hC9-sl-Qsj" secondAttribute="bottom" constant="8" symbolic="YES" id="Pat-Gh-fXg"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="centerX" secondItem="nQB-pQ-e1U" secondAttribute="centerX" id="edb-h5-CYI"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="top" secondItem="Ajf-OS-FVT" secondAttribute="top" constant="139" id="fsa-QD-7A6"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="trailing" secondItem="eUX-KC-Rbv" secondAttribute="trailing" id="p8A-7G-0Rz"/>
+                            <constraint firstItem="xYZ-Du-bMV" firstAttribute="leading" secondItem="zJx-UH-8d2" secondAttribute="leading" constant="18" id="qCo-OV-PWs"/>
+                            <constraint firstItem="nQB-pQ-e1U" firstAttribute="leading" secondItem="Ajf-OS-FVT" secondAttribute="leadingMargin" id="qxw-Ll-QBm"/>
+                            <constraint firstItem="hC9-sl-Qsj" firstAttribute="leading" secondItem="eUX-KC-Rbv" secondAttribute="leading" id="vu6-wX-Z5s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJx-UH-8d2"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionText" destination="nQB-pQ-e1U" id="qm6-BO-CFe"/>
+                        <outlet property="imageView" destination="hC9-sl-Qsj" id="R2L-yl-qRd"/>
+                        <outlet property="nameLabel" destination="eUX-KC-Rbv" id="I4o-sq-BEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AW-tJ-olx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hero-background" width="1280" height="720"/>
+    </resources>
+</document>
