@@ -4,4 +4,4 @@
 ScreenShots:
 
 Home Page:
-![Home](MuseumARPIC.png)
+![Home](MuseumARPIC.jpeg)
